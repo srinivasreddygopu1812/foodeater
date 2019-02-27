@@ -8,7 +8,9 @@ public class DbUtil {
 	
 	public static SessionFactory getSessionFactory() {
 		if(sf==null) {
-			System.out.println("2nd  time request");
+		
+			System.out.println("testing conflicts");
+
 		return	sf=new Configuration().configure().buildSessionFactory();
 		}
 		else {
