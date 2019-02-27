@@ -9,6 +9,7 @@ public class DbUtil {
 	public static SessionFactory getSessionFactory() {
 		if(sf==null) {
 			System.out.println("first time request");
+			System.out.println("hiiiiiiii");
 		return	sf=new Configuration().configure().buildSessionFactory();
 		}
 		else {
